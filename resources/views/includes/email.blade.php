@@ -30,12 +30,12 @@
             'content' => view('email-viewer::tabs.html', compact('email'))
         ],
         [
-            'title' => 'Raw',
-            'content' => nl2br(htmlentities($email->raw()))
-        ],
-        [
             'title' => 'Headers',
             'content' => view('email-viewer::tabs.headers', compact('email')),
+        ],
+        [
+            'title' => 'Raw',
+            'content' => nl2br(htmlentities($email->raw()))
         ],
     ]])
 </div>
