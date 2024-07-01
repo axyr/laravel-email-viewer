@@ -25,7 +25,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
 
         Carbon::setTestNow($this->now = now());
 
-        $this->emailContent = file_get_contents(__DIR__ . '/fixtures/20240628175734592648-test-email-email');
+        $this->emailContent = file_get_contents(__DIR__ . '/fixtures/test-email');
     }
 
     protected function getPackageProviders($app)

@@ -14,8 +14,9 @@ class RepositoryTest extends TestCase
     public function testItStoresAnEmailToTheDatabase(): void
     {
         $email = app(Repository::class)->create($this->emailContent);
+        $hash = md5($this->emailContent);
 
-        $this->assertEquals($this->now->format('YmdHisu') . '-3a18860163e7a2fc1dfe71162db4a24d-email', $email->id());
+        $this->assertEquals($this->now->format('YmdHisu') . '-' . $hash . '-email', $email->id());
         $this->assertEquals($this->emailContent, $email->raw());
         $this->assertEquals('"Mrs. Lavinia Pacocha" <mason92@hotmail.com>', $email->from());
         $this->assertEquals('Marshall Ryan <oma.crist@mclaughlin.com>, Aracely Lebsack <madilyn.jacobs@yahoo.com>', $email->to());
@@ -48,8 +49,8 @@ class RepositoryTest extends TestCase
     public function testItFindsAndEmail(): void
     {
         app(Repository::class)->create($this->emailContent);
-
-        $fileName = $this->now->format('YmdHisu') . '-3a18860163e7a2fc1dfe71162db4a24d-email';
+        $hash = md5($this->emailContent);
+        $fileName = $this->now->format('YmdHisu') . '-' . $hash . '-email';
 
         $this->assertTrue(app(Repository::class)->exists($fileName));
         $this->assertEquals($fileName, app(Repository::class)->find($fileName)->id());
@@ -58,8 +59,9 @@ class RepositoryTest extends TestCase
     public function testItDeletesAndEmail(): void
     {
         app(Repository::class)->create($this->emailContent);
+        $hash = md5($this->emailContent);
 
-        $fileName = $this->now->format('YmdHisu') . '-3a18860163e7a2fc1dfe71162db4a24d-email';
+        $fileName = $this->now->format('YmdHisu') . '-' . $hash . '-email';
 
         app(Repository::class)->delete($fileName);
 
