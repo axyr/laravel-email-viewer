@@ -26,7 +26,7 @@ class BladeEmailController
         return view('email-viewer::show', compact('emails', 'email'));
     }
 
-    public function destroy(tring|int $id): RedirectResponse
+    public function destroy(string|int $id): RedirectResponse
     {
         Emails::delete($id);
 
