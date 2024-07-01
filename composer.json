@@ -1,0 +1,34 @@
+{
+    "name": "axyr/laravel-email-viewer",
+    "description": "A simple email viewer for Laravel",
+    "keywords": [
+        "laravel",
+        "email"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Axyr\\EmailViewer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Axyr\\EmailViewer\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martijn van Nieuwenhoven",
+            "email": "info@axyrmedia.nl"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.9",
+        "php-mime-mail-parser/php-mime-mail-parser": "^8.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "orchestra/testbench": "^9.1"
+    }
+}
