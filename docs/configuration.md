@@ -1,5 +1,19 @@
 # Configuration
 
+> [!IMPORTANT]  
+> This package requires the PECL [mailparse](https://www.php.net/manual/en/book.mailparse.php) extension
+
+The Email Viewer will work out of the box after installing,
+but you van change most of the default behaviour by adjusting the config setting.
+
+First publish the configuration file:
+
+```php
+php artisan vendor:publish --provider="Axyr\EmailViewer\EmailViewerServiceProvider"
+```
+
+Below are the configuration options available to you
+
 ```php
 <?php
 
@@ -42,8 +56,6 @@ return [
     
     /*
      * The package controllers default items per page for the pagination results.
-     * If you want to use the shipped controllers, but a different default items per page,
-     * change this value.
      */
     'default_pagination' => 25,
     
