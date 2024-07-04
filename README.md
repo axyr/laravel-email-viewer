@@ -2,7 +2,7 @@
 
 View and inspect all emails sent from your Laravel application.
 
-![docs/img/screenshot.png](docs/img/screenshot.png)
+![docs/img/screenshot.png](docs/img/mailboxes.png)
 
 ## Introduction
 
