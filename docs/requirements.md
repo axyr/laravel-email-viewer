@@ -8,4 +8,4 @@ This package uses the PECL [mailparse](https://www.php.net/manual/en/book.mailpa
 
 Please follow the installation instructions on the php-mime-mail-parser GitHub page:
 
-https://github.com/php-mime-mail-parser/php-mime-mail-parser
+[https://github.com/php-mime-mail-parser/php-mime-mail-parser](https://github.com/php-mime-mail-parser/php-mime-mail-parser)
