@@ -1,7 +1,7 @@
 <?php
 
 /** @var \Axyr\EmailViewer\Contracts\EmailMessage $email */
-$routeNamespace = config('emailviewer.route-namespace')
+$routeNamespace = config('emailviewer.route-prefix')
 ?>
 @foreach($emails as $email)
     <a href="{{ route($routeNamespace . '.show', $email->id()) }}">

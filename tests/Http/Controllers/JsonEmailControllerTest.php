@@ -26,7 +26,7 @@ class JsonEmailControllerTest extends TestCase
     {
         config()->set('emailviewer.default_pagination', 3);
 
-        $routeNamespace = config('emailviewer.route-namespace');
+        $routeNamespace = config('emailviewer.route-prefix');
 
         for ($i = 0; $i < 6; $i++) {
             app(Repository::class)->create($this->emailContent . $i);
@@ -41,7 +41,7 @@ class JsonEmailControllerTest extends TestCase
 
     public function testShowsAnEmail(): void
     {
-        $routeNamespace = config('emailviewer.route-namespace');
+        $routeNamespace = config('emailviewer.route-prefix');
 
         $email = app(Repository::class)->create($this->emailContent);
 
@@ -52,7 +52,7 @@ class JsonEmailControllerTest extends TestCase
 
     public function testDeletesAnEmail(): void
     {
-        $routeNamespace = config('emailviewer.route-namespace');
+        $routeNamespace = config('emailviewer.route-prefix');
 
         $email = app(Repository::class)->create($this->emailContent);
 

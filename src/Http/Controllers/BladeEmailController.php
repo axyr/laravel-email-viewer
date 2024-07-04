@@ -30,7 +30,7 @@ class BladeEmailController
     {
         Emails::delete($id);
 
-        $routeNamespace = config('emailviewer.route-namespace');
+        $routeNamespace = config('emailviewer.route-prefix');
 
         return redirect(route($routeNamespace . '.index'));
     }
