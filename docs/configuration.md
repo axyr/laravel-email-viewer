@@ -1,6 +1,5 @@
 # Configuration
 
-> [!IMPORTANT]  
 > This package requires the PECL [mailparse](https://www.php.net/manual/en/book.mailparse.php) extension
 
 The Email Viewer will work out of the box after installing,

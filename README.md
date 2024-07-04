@@ -36,6 +36,8 @@ Emails::server('database')->get();
 
 ## Quick start
 
+> This package requires the PECL [mailparse](https://www.php.net/manual/en/book.mailparse.php) extension
+
 Run the composer install command from the terminal:
 
 ```php
