@@ -9,7 +9,7 @@ class EmailViewerDelete extends Command
 {
     protected $signature = 'email-viewer:delete
         { --id= : The unique id of the email (example: path or id) }
-        { --since= : Delete all emails since n days ago ) }
+        { --since= : Delete all emails since n days ago }
         { --server= : The email store to list }';
 
     protected $description = 'Show an email';

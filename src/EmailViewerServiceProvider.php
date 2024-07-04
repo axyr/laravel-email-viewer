@@ -52,6 +52,7 @@ class EmailViewerServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
+                Commands\EmailViewerSendTest::class,
                 Commands\EmailViewerList::class,
                 Commands\EmailViewerShow::class,
                 Commands\EmailViewerDelete::class,
@@ -74,6 +75,8 @@ class EmailViewerServiceProvider extends ServiceProvider
 
     protected function bootRoutes(): void
     {
-        $this->loadRoutesFrom(__DIR__ . '/../routes/emailviewer.php');
+        if ($this->app['config']['emailviewer.routes-enabled']) {
+            $this->loadRoutesFrom(__DIR__ . '/../routes/emailviewer.php');
+        }
     }
 }

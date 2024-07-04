@@ -5,6 +5,7 @@ return [
     'enabled' => (bool)env('EMAIL_VIEWER_ENABLED', true),
     'parser' => \Axyr\EmailViewer\Parsers\PhpMimeMailParser::class,
     'listener' => \Axyr\EmailViewer\Listeners\EmailWriterListener::class,
+    'routes-enabled' => true,
     'route-namespace' => 'emails',
     'default_pagination' => 25,
     'servers' => [
