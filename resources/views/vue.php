@@ -62,10 +62,10 @@
         template:
             `
                 <div class="h-screen p-6">
-                    <div class="grid grid-cols-12 gap-6 h-full">
-                        <div class="col-span-3 bg-white border-b rounded shadow-sm overflow-y-scroll">
+                    <div class="flex gap-6 h-full">
+                        <div class="flex-none bg-white border-b rounded shadow-sm overflow-y-scroll md:w-96">
                             <div v-for="email in emails">
-                                <div @click="showEmail(email)" class="border-b cursor-pointer p-3 text-sm hover:bg-gray-50 {{ currentEmail.id === email.id ? 'bg-gray-100' : '' }}">
+                                <div @click="showEmail(email)" class="border-b cursor-pointer p-3 text-sm hover:bg-gray-50" :class="{ 'bg-gray-100': currentEmail?.id === email.id }">
                                     <h3 class="font-medium pb-1">
                                         {{ email.subject.substring(0, 35) }}
                                     </h3>
@@ -76,7 +76,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-9 bg-white rounded shadow-sm h-full overflow-y-hidden">
+                        <div class="flex-1 bg-white rounded shadow-sm h-full overflow-y-hidden">
 
                             <div v-if="currentEmail" class="p-3 border-b overflow-y-hidden">
                                 <h2 class="text-2xl">{{ currentEmail.subject }}</h2>

@@ -9,13 +9,13 @@
 </head>
 <body class="bg-gray-100">
 <div class="h-screen p-6">
-    <div class="grid grid-cols-12 gap-6 h-full">
-        <div class="col-span-3 bg-white border-b rounded shadow-sm overflow-y-scroll">
+    <div class="flex gap-6 h-full">
+        <div class="flex-none bg-white border-b rounded shadow-sm overflow-y-scroll md:w-96">
             <div>
                 @include('email-viewer::layout.sidebar')
             </div>
         </div>
-        <div class="col-span-9 bg-white rounded shadow-sm h-full overflow-y-hidden">
+        <div class="flex-1 bg-white rounded shadow-sm h-full overflow-y-hidden">
             @yield('main')
         </div>
     </div>
