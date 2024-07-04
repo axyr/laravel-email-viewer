@@ -15,7 +15,7 @@ Publish the database migration and configuration file:
 php artisan vendor:publish --provider="Axyr\EmailViewer\EmailViewerServiceProvider"
 ```
 
-By default the package provides a set of routes for the Blade UI and the Vue UI. You can disabled them in the config file.
+By default this package provides a set of routes for the Blade UI and the Vue UI. You can disabled them in the config file.
 
 You can access the Blade UI by visiting:
 

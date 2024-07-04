@@ -2,7 +2,7 @@
 
 View and inspect all emails sent from your Laravel application.
 
-![](docs/img/mailboxes.png)
+![](img/mailboxes.png)
 
 Laravel Email Viewer is a package that allows you to view all emails sent from you application in the browser. This allows you to ensure your application has actually sent the mail. When using log as
 an email driver for your local or staging environment, you can inspect emails without the need for external tools like Mailtrap or Mailhog, so emails never have to leave your server at all.
