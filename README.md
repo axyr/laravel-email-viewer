@@ -62,6 +62,8 @@ You can access the Blade UI by visiting:
 https://your-host.tld/emails
 ```
 
+![](docs/img/screenshot.png)
+
 To send a test email the package provides a simple Test command.
 By default it will send to the laraval config value `mail.from.address`
 
