@@ -6,8 +6,6 @@
 * [Requirements](requirements.md)
 * [Installation](installation.md)
 * [Configuration](configuration.md)
-
-## Advanced usage
-
+* User interface demo's(user-interface-demos.md)
+* [Controllers](controllers.md)
 * [Commands](commands.md)
-* [Prune old emails](pruning.md)

@@ -18,6 +18,10 @@ an email driver for your local or staging environment, you can inspect emails wi
 * Packed with a simple Blade UI and a Vue.js/JSON controller
 * Easily integrate in your existing application
 
+## Documentation
+
+[https://axyr.gitbook.io/laravel-email-viewer](https://axyr.gitbook.io/laravel-email-viewer)
+
 ## Usage
 
 Outgoing emails will be automatically copied to a local disk or table, but you can work with this package manually as well with the Emails facade:
