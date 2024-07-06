@@ -6,6 +6,5 @@
 * [Requirements](requirements.md)
 * [Installation](installation.md)
 * [Configuration](configuration.md)
-* User interface demo's(user-interface-demos.md)
-* [Controllers](controllers.md)
+* [User interface demo's](user-interface-demos.md)
 * [Commands](commands.md)
